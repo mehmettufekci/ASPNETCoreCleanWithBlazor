@@ -9,6 +9,6 @@ namespace HR.LeaveManagement.Application.Contracts.Email
 {
     public interface IEmailSender
     {
-        Task<bool> SendMail(EmailMessage email);
+        Task<bool> SendEmail(EmailMessage email);
     }
 }
