@@ -28,7 +28,7 @@ namespace HR.LeaveManagement.BlazorUI.Providers
             var savedToken = await localStorage.GetItemAsync<string>("token");
             var tokenContent = jwtSecurityTokenHandler.ReadJwtToken(savedToken);
 
-            if (tokenContent.ValidTo < DateTime.Now)
+            if (tokenContent.ValidTo < DateTime.UtcNow)
             {
                 await localStorage.RemoveItemAsync("token");
                 return new AuthenticationState(user);

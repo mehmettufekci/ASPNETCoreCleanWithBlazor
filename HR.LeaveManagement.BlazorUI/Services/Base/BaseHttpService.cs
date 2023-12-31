@@ -1,6 +1,5 @@
 ﻿
 using Blazored.LocalStorage;
-using HR.LeaveManagement.BlazorUI.Services.Base;
 using System.Net.Http.Headers;
 
 namespace HR.LeaveManagement.BlazorUI.Services.Base
